@@ -30,14 +30,16 @@
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link"
                 aria-current="page"
                 href="../html/homepage.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../html/backoffice.html">Backoffice</a>
+              <a class="nav-link active" href="../html/backoffice.html"
+                >Backoffice</a
+              >
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -53,18 +55,52 @@
       </div>
     </nav>
     <header class="text-center my-5">
-      <h1>SNEAKERS</h1>
-      <h2>Compra qui le tue scarpe preferite</h2>
+      <h1>SNEAKERS E-COMMERCE</h1>
+      <h3>Benvenuti nell'area di amministrazione</br>qui puoi creare le tue sneakers con tutti i dati</h3>
     </header>
     <main>
-      <section>
-        <div class="container">
-          <div
-            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center g-2"
-            id="row"
-          ></div>
+      <div class="container">
+        <div class="row justify-content-center my-5">
+          <div class="col col-12 col-md-6">
+            <form id="sneakerForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome Sneaker</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label"
+                  >Descrizione Sneaker</label
+                >
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="description"
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="brand" class="form-label">Brand Sneaker</label>
+                <input type="text" class="form-control" id="brand" required />
+              </div>
+              <div class="mb-3">
+                <label for="imageUrl" class="form-label"
+                  >Immagine URL Sneaker</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="imageUrl"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="quantity" class="form-label">Prezzo Sneaker</label>
+                <input type="number" class="form-control" id="price" required />
+              </div>
+              <button type="submit" class="btn btn-success">SALVA</button>
+            </form>
+          </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer></footer>
     <script
@@ -72,6 +108,6 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <script src="../scripts/homepage.js"></script>
+    <script src="../scripts/backoffice.js"></script>
   </body>
 </html>
