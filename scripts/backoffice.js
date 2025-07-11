@@ -82,7 +82,7 @@ sneakerForm.addEventListener('submit', (e) => {
       if (res.ok) {
         alert('OPERAZIONE COMPLETATA');
         sneakerForm.reset();
-        window.location.href = '/html/backoffice.html';
+        location.href = '/html/backoffice.html';
       } else {
         throw new Error("C'è un errore nella richiesta", res);
       }
