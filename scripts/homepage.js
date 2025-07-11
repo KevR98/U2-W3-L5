@@ -29,7 +29,7 @@ const getProduct = function () {
       sneakers.forEach((sneaker) => {
         row.innerHTML += `
         <div class="col">
-          <div class="card shadow p-3 mb-5 bg-body-tertiary">
+          <div class="card shadow p-3 mb-5 bg-body-dark">
             <img src="${sneaker.imageUrl}" class="card-img-top" alt="Image Sneaker">
             <div class="card-body d-flex flex-column">
               <h3 class="card-title my-2">${sneaker.name}</h3>
