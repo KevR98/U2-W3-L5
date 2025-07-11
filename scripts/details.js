@@ -50,10 +50,6 @@ const backHomeSneaker = function () {
   location.assign('/html/homepage.html');
 };
 
-const editSneaker = function () {
-  location.assign('/html/backoffice.html?sneakerId=' + id);
-};
-
 // Faccio una funzione
 const deleteSneaker = function () {
   // Faccio la chiamata con metodo "DELETE" e autorizzazione per poterla cancellare
@@ -78,3 +74,12 @@ const deleteSneaker = function () {
 };
 
 detail();
+
+// Faccio il footer
+const footer = function () {
+  // per prima cosa, popolo il footer con l'anno corrente
+  const span = document.getElementById('year');
+  span.innerText = new Date().getFullYear(); // 2025
+};
+
+footer();

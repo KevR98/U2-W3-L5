@@ -125,3 +125,16 @@ if (id) {
       console.log('ERRORE');
     });
 }
+
+reset = function () {
+  sneakerForm.reset();
+};
+
+// Faccio il footer
+const footer = function () {
+  // per prima cosa, popolo il footer con l'anno corrente
+  const span = document.getElementById('year');
+  span.innerText = new Date().getFullYear(); // 2025
+};
+
+footer();
