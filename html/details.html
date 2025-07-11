@@ -64,18 +64,21 @@
             id="row"
           >
             <div class="card">
-              <img src="..." class="card-img-top" alt="Sneaker" />
+              <img src="" class="card-img-top" alt="Sneaker" />
               <div class="card-body">
                 <h3 class="card-title" id="name"></h3>
                 <h5 class="card-text" id="brand"></h5>
                 <p class="card-text" id="description"></p>
                 <p class="card-text" id="price"></p>
-                <div>
+                <div class="d-flex">
                   <button onclick="editSneaker()" class="btn btn-warning">
                     MODIFICA
                   </button>
                   <button onclick="deleteSneaker()" class="btn btn-danger">
                     ELIMINA
+                  </button>
+                  <button onclick="backHomeSneaker()" class="btn btn-success">
+                    TORNA INDIETRO
                   </button>
                 </div>
               </div>

@@ -36,15 +36,18 @@ const detail = function () {
       document.querySelector('.card-img-top').src = sneakerDetail.imageUrl;
       document.getElementById('name').innerText = sneakerDetail.name;
       document.getElementById('brand').innerText = sneakerDetail.brand;
-      (document.getElementById('description').innerText =
-        sneakerDetail.description),
-        '.';
-      (document.getElementById('price').innerText = sneakerDetail.price), ' €';
+      document.getElementById('description').innerText =
+        sneakerDetail.description + '.';
+      document.getElementById('price').innerText = sneakerDetail.price + '€';
     })
 
     .catch((err) => {
       console.log('ERRORE!');
     });
+};
+
+const backHomeSneaker = function () {
+  location.assign('/html/homepage.html');
 };
 
 const editSneaker = function () {

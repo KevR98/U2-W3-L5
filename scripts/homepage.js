@@ -28,14 +28,16 @@ const getProduct = function () {
       const row = document.getElementById('row');
       sneakers.forEach((sneaker) => {
         row.innerHTML += `
-        <div class="card">
-          <img src="${sneaker.imageUrl}" class="card-img-top" alt="Image Sneaker">
-          <div class="card-body">
-            <h3 class="card-title">${sneaker.name}</h3>
-            <h5 class="card-text">Brand: ${sneaker.brand}</h5>
-            <p class="card-text">Description: ${sneaker.description}.</p>
-            <p class="card-text">Price: ${sneaker.price} €</p>
-            <a href="../html/details.html?sneakerId=${sneaker._id}" class="btn btn-success">Vai ai Dettagli</a>
+        <div class="col">
+          <div class="card h-100">
+            <img src="${sneaker.imageUrl}" class="card-img-top" alt="Image Sneaker">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title my-2">${sneaker.name}</h3>
+              <h5 class="card-text my-2">Brand: ${sneaker.brand}</h5>
+              <p class="card-text my-3">Description: ${sneaker.description}.</p>
+              <p class="card-text flex-grow-1">Price: ${sneaker.price} €</p>
+              <a href="../html/details.html?sneakerId=${sneaker._id}" class="btn btn-success">Vai ai Dettagli</a>
+            </div>
           </div>
         </div>
         `;
